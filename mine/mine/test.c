@@ -5,6 +5,7 @@
 #define MAX_ROW 9
 #define MAX_COL 9
 #define DEFAULT_MINE_COUNT 10
+
 int menu(){//用户交互菜单
 	printf("======================\n");
 	printf("1.开始游戏\n");
@@ -84,7 +85,7 @@ void game() {
 	init(ShowMap, MineMap);
 	int openedBlockCount = 0;
 	while (1){
-		//printMap(MineMap);
+		printMap(MineMap);
 		printf("===================\n");
 		printMap(ShowMap);
 		int row = 0;
@@ -129,4 +130,5 @@ int main(){
 	}
 	system("pause");
 	return 0;
+
 }
