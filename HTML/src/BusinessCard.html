@@ -11,9 +11,26 @@
         h1{color: blue;}
         #xxx{color: red;}
     </style>
+    <!--html文件head中使用<script>-->
+    <script>
+        //alert('1')
+        var articles=[{
+            title:"我的第一篇博客",
+            content:"学习HTML"
+        },{
+            title:"我的第二篇博客",
+            content:"学习JS"}
+        ];
+        console.log(articles)
+        function l(x,y,z) {
+            console.log(x+","+y+","+z);
+        }
+    </script>
 
+    <!--html中引入外部的js文件-->
+    <!--<script type="application/javascript" src="js/1.js"></script>-->
 </head>
-<body>
+<body onload="l('2')"><!--绑定html标签的事件属性-->
     <h1>
         一条咸鱼
     </h1>
